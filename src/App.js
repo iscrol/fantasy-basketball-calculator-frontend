@@ -15,7 +15,7 @@ function App() {
     const fetchPlayers = useCallback(async () => {
         try {
             const statsQuery = activeStats.join('&stats=');
-            const apiUrl = import.meta.env.VITE_API_BASE_URL; // Make sure this environment variable is set in Netlify
+            const apiUrl = process.env.REACT_APP_API_BASE_URL;
             const response = await fetch(`${apiUrl}?stats=${statsQuery}`);
             const data = await response.json();
             setPlayers(data);
