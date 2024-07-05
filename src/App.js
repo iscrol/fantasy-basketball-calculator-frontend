@@ -29,13 +29,21 @@ function App() {
         fetchPlayers();
     }, [fetchPlayers]);  // Include fetchPlayers in the dependency array of useEffect
 
+    const handleToggleStat = (stat) => {
+        setActiveStats(prevStats =>
+            prevStats.includes(stat)
+                ? prevStats.filter(s => s !== stat)
+                : [...prevStats, stat]
+        );
+    };
+
     return (
         <div>
             <header>
                 <HelpButton />
             </header>
             <Title />
-            <StatisticalButtons activeStats={activeStats} onToggleStat={setActiveStats} />
+            <StatisticalButtons activeStats={activeStats} onToggleStat={handleToggleStat} />
             <PlayerTable players={players} />
         </div>
     );
