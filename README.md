@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+Here is the link to the website: https://fantasy-basketball-calculator.netlify.app/.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a full stack fantasy basketball calculator that I built to help me with drafting
+players for my fantasy basketball team. I created the frontend with React.js and am hosting
+it with netlify. I used the python framework Flask for the backend and hosted the
+flask app on Heroku. Lastly, I used PostgresQL for the database and am hosting it on
+Supabase. I used this calculator to win my fantasy basketball calculator last season!
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If needed there's a help button on the site, which gives a detailed explanation on how
+to use the site. In fantasy basketball you go head to head against a new opponent each week.
+There are 9 statistical categories that you compete against your opponent in. You win the
+weekly matchup by winning more of the 9 categories than your opponent. So, in order to
+guarantee a win you only need to win 5 of the categories. As a result, there is a very
+common strategy called punting where a player disregards a couple of categories
+and drafts a team that is designed to only be good at 5-7 categories since you don't
+need to be good at all of them. This is where my calculator comes into play. There
+are lots of rankings on the internet for players where all 9 categories are included;
+however, the value of a player changes dramatically dependeing on what categories you
+include/exclude. My calculator allows you to specifiy your exact strategy and will
+generate a ranking of players based off of this strategy. This can give you a competitive
+advantage in your draft or waiver wire pickups as you can draft players that are highly
+valued for your strategy, but may not be valued as highly overall. I was able to utilize
+this tool and technique to win my fantasy basketball league last season, so the calculator
+does have some merit to it.
