@@ -22,7 +22,9 @@ function App() {
         } catch (error) {
             console.error('Failed to fetch players:', error);
         }
-    }, [activeStats]);  // Include activeStats in the dependency array of useCallback
+    }, [activeStats]);
+    
+    
 
     // Effect to fetch players when activeStats changes
     useEffect(() => {
